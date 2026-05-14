@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Name | Official Music Portfolio</title>
+    <meta name="description" content="Official portfolio and music of Artist Name. Listen to the latest tracks, find tour dates, and connect.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ARTIST<span>NAME</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="THE SOUND OF TOMORROW">THE SOUND OF TOMORROW</h1>
+            <p>Experience the new album 'Ethereal Echoes'</p>
+            <div class="hero-buttons">
+                <a href="#music" class="btn primary-btn"><i class="fas fa-play"></i> Listen Now</a>
+                <a href="#tour" class="btn secondary-btn">Tour Dates</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="music" class="music-section">
+        <h2 class="section-title">Latest Releases</h2>
+        <div class="player-container glass-panel">
+            <div class="track-info">
+                <div class="album-art">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop" alt="Album Cover">
+                </div>
+                <div class="track-details">
+                    <h3>Neon Dreams</h3>
+                    <p>Ethereal Echoes EP</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <div class="progress-container">
+                    <span class="time current-time">0:00</span>
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <span class="time duration">3:45</span>
+                </div>
+                <div class="control-buttons">
+                    <button id="prev" aria-label="Previous Track"><i class="fas fa-step-backward"></i></button>
+                    <button id="play" class="play-btn" aria-label="Play or Pause"><i class="fas fa-play"></i></button>
+                    <button id="next" aria-label="Next Track"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="track-list">
+            <div class="track-item active">
+                <span class="track-num">01</span>
+                <span class="track-name">Neon Dreams</span>
+                <span class="track-duration">3:45</span>
+                <button class="play-track" aria-label="Play Neon Dreams"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="track-item">
+                <span class="track-num">02</span>
+                <span class="track-name">Midnight Sync</span>
+                <span class="track-duration">4:12</span>
+                <button class="play-track" aria-label="Play Midnight Sync"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="track-item">
+                <span class="track-num">03</span>
+                <span class="track-name">Starlight Echo</span>
+                <span class="track-duration">2:58</span>
+                <button class="play-track" aria-label="Play Starlight Echo"><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tour" class="tour-section">
+        <h2 class="section-title">Live Tour 2026</h2>
+        <div class="tour-dates">
+            <div class="tour-card glass-panel">
+                <div class="tour-date">
+                    <span class="month">OCT</span>
+                    <span class="day">15</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Madison Square Garden</h3>
+                    <p>New York, NY</p>
+                </div>
+                <a href="#" class="btn primary-btn outline">Get Tickets</a>
+            </div>
+            <div class="tour-card glass-panel">
+                <div class="tour-date">
+                    <span class="month">OCT</span>
+                    <span class="day">22</span>
+                </div>
+                <div class="tour-info">
+                    <h3>O2 Arena</h3>
+                    <p>London, UK</p>
+                </div>
+                <a href="#" class="btn primary-btn outline">Get Tickets</a>
+            </div>
+            <div class="tour-card glass-panel">
+                <div class="tour-date">
+                    <span class="month">NOV</span>
+                    <span class="day">05</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Tokyo Dome</h3>
+                    <p>Tokyo, Japan</p>
+                </div>
+                <a href="#" class="btn primary-btn outline sold-out">Sold Out</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1516280440502-6c243883a933?q=80&w=1000&auto=format&fit=crop" alt="Artist Performing">
+                <div class="image-accent"></div>
+            </div>
+            <div class="about-text">
+                <h2 class="section-title left-align">The Journey</h2>
+                <p>Blending synthetic waves with acoustic soul, Artist Name has redefined the modern soundscape. With multiple platinum records and a reputation for mesmerizing live performances, the journey is just beginning.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-num">50M+</span>
+                        <span class="stat-label">Streams</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Albums</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">120</span>
+                        <span class="stat-label">Live Shows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>ARTIST<span>NAME</span></h2>
+                <p>For booking and inquiries.</p>
+                <a href="mailto:booking@artistname.com" class="contact-email">booking@artistname.com</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" aria-label="Apple Music"><i class="fab fa-apple"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Artist Name Official. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
